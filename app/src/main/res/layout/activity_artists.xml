@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ArtistsActivity">
+
+    <LinearLayout
+        android:id="@+id/artists_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_menu_now_is_playing"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="now is playing"
+            android:textSize="15sp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_albums_top_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Albums"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_settings_top_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Settings"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_musicStore_top_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Music Store"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewOfArtists">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="true"
+            android:queryHint="Search"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/listViewArtist">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

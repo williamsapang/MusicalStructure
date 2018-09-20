@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:id="@+id/settings_top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_menu_now_is_playing"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="now is playing"
+            android:textSize="15sp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_albums_top_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Albums"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_artist_top_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Artists"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_musicStore_top_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:text="Music Store"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API has Expire, you need to reload this page"
+            style="@style/menu_category_text"/>
+    </LinearLayout>
+</LinearLayout>

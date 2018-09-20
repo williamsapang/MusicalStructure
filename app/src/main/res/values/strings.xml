@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="layoutPlay">Play</string>
+    <string name="albums">albums</string>
+    <string name="artist">artist</string>
+    <string name="store">store</string>
+    <string name="setting">setting</string>
+    <string name="now_is_playing_screen_descriptions">Here is the main screen for listening to songs. You can change songs, loop songs. Please enjoy it!</string>
+</resources>

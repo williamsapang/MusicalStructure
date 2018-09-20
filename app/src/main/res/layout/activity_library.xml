@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Library">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+
+        <LinearLayout
+            style="@style/menu_category_style"
+            android:orientation="horizontal"
+            android:id="@+id/nowIsPlaying">
+
+            <ImageView
+                style="@style/menu_category_icon"
+                android:src="@drawable/play" />
+
+            <TextView
+
+                style="@style/menu_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Now is Playing" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/albums"
+            style="@style/menu_category_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/menu_category_icon"
+                android:src="@drawable/album" />
+
+            <TextView
+                style="@style/menu_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Albums" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/artists"
+            style="@style/menu_category_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/menu_category_icon"
+                android:src="@drawable/artist" />
+
+            <TextView
+                style="@style/menu_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Artists" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/musicStore"
+            style="@style/menu_category_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/menu_category_icon"
+                android:src="@drawable/store" />
+
+            <TextView
+                style="@style/menu_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Music Store" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/settings"
+            style="@style/menu_category_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/menu_category_icon"
+                android:src="@drawable/setting" />
+
+            <TextView
+                style="@style/menu_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Settings" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
